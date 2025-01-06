@@ -1,0 +1,13 @@
+pipeline{
+    agent any
+
+    stages{
+        stage('checkout stage'){
+            steps{
+                git branch:'dev',url:'https://github.com/vinayy2806/my-repo-2025.git'
+
+
+            }
+        }
+    }
+}
