@@ -36,6 +36,14 @@ pipeline {
                     echo "printing the cup utilisation"
                 df -kh
                 '''
+        stage('current-process-running'){
+            steps{
+                sh '''
+                    echo "printing the current -running processs"
+                    ps -ef | head
+                '''    
+            }
+        }        
             }
         }
 
