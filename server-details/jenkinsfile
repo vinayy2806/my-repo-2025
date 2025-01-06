@@ -26,6 +26,7 @@ pipeline {
             steps{
                 sh '''
                     echo "printing the cup details"
+                lscpu    
                 '''   
             }
         }
@@ -35,7 +36,10 @@ pipeline {
                 sh '''
                     echo "printing the cup utilisation"
                 df -kh
+            
                 '''
+            }
+        }
         stage('current-process-running'){
             steps{
                 sh '''
@@ -44,8 +48,7 @@ pipeline {
                 '''    
             }
         }        
-            }
-        }
+        
 
 
     }
