@@ -6,7 +6,7 @@ pipeline {
             steps{
                 sh '''
                     echo "system details -1st stage"
-                uname -a
+                    uname -a
                 '''
 
             }
@@ -16,7 +16,7 @@ pipeline {
             steps{
                 sh '''
                     echo "printing memory details"
-                free -h
+                    free -h
             
                 '''
             }
@@ -26,7 +26,7 @@ pipeline {
             steps{
                 sh '''
                     echo "printing the cup details"
-                lscpu    
+                    lscpu    
                 '''   
             }
         }
@@ -35,7 +35,7 @@ pipeline {
             steps{
                 sh '''
                     echo "printing the cup utilisation"
-                df -kh
+                    df -kh
             
                 '''
             }
@@ -48,8 +48,6 @@ pipeline {
                 '''    
             }
         }        
-        
-
 
     }
           
